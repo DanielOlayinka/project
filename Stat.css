@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    /* (main background) */
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* card background) */
+    --Soft-violet: hsl(277, 64%, 61%);
+    /* (accent) */
+    --White: hsl(0, 0%, 100%);
+    /* (main heading, stats) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (main paragraph) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    /* stat headings) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.box {
+    margin: 140px auto;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    border-radius: 10px;
+    background-color: var(--Dark-desaturated-blue);
+}
+
+.ox-cont {
+    background-color: var(--Soft-violet);
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    opacity: 0.4;
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    display: flex;
+    width: 450px;
+    height: 350px;
+    border-radius: 0 10px 10px 0;
+}
+
+.container {
+    margin-top: -350px;
+    position: absolute;
+    opacity: 0.3;
+    background-color: var(--Dark-desaturated-blue);
+    height: 350px;
+    width: 450px;
+    border-radius: 0 10px 10px 0;
+}
+
+.content {
+    
+    position: relative;
+    width: 450px;
+    height: 350px;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Inter';
+    color: var(--White);
+
+}
+
+span {
+    color: var(--Soft-violet);
+}
+
+p {
+    font-family: 'Lexend Deca';
+    color: var(--Slightly-transparent-white);
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.time {
+    display: flex;
+    padding-top: 50px;
+    margin-top: 70px;
+    padding: 0;
+    margin-top: 50px;
+
+}
+
+.time b {
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: var(--White);
+}
+
+.time p {
+    font-family: 'Lexend Deca';
+    text-align: center;
+    margin-top: 0;
+    margin-right: 50px; 
+    font-size: 9px;
+    color: var(--Slightly-transparent-white);
+}
+/* Phone */
+@media (max-width: 500px) {
+    body {
+        max-width: 100%;
+    }
+    h1{
+        text-align: center;
+        margin: 10px 30px;
+        width: 300px;
+    }
+    p{
+        text-align: center;
+        line-height: 30px;
+        margin:-15px 40px;
+        font-size: 15px;
+        color: var(--Slightly-transparent-white);
+        
+    }
+
+    .box {
+        height: 820px;
+        border-radius: 10px;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 60PX ;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Dark-desaturated-blue);
+    }
+
+    img {
+        margin-top: -410px;
+        margin-bottom: 0;
+        float: none;
+        border-radius: 10px 10px 0 0;
+        height: 250PX;
+        width: 300px;
+
+        object-fit: cover;
+        
+    }
+
+    .ox-cont {
+        position: absolute;
+        margin-top: -410px;
+        height: 250PX;
+        width: 300px;
+        border-radius: 10px 10px 0 0;
+        background-color: rgb(133, 35, 224);
+        
+    }
+    .container{
+        margin-top: -250px;
+        width: 300px;
+        height: 250PX;
+        border-radius: 10px 10px 0 0;
+        background-color: rgba(238, 130, 238, 0.466);
+        
+    }
+    .content{
+        position: absolute;
+        margin-top: 230PX;
+        height: 610px;
+        
+    }
+    .time{
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .time b {
+        font-size: 24px;
+    }
+
+    .time p {
+        
+        
+        font-size: 12px;
+        margin-top: 30px;
+        line-height: 24px;
+        
+    }
+}
+/* Tablet */
+@media(min-width: 600px) and (max-width: 970px) {
+    body{
+        max-width: 100%;
+        background-image: url(./image/download\ \(1\).jpg);
+    }
+   
+   .box{
+    margin-top: 250px;
+    background-color: aliceblue;
+    max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 500px;
+    border: 0;
+    background-color: var(--Very-dark-blue);
+   }
+   img{
+    max-width: 370px;
+    height: 370px;
+    float: none;
+   }
+   .content{
+    max-width: 370px;
+    height: 370px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--Dark-desaturated-blue);
+   }
+   .ox-cont{
+    max-width: 370px;
+    height: 370px
+   }
+   .container{
+    max-width: 370px;
+    height: 370px;
+    margin-top: -370px;
+   }
+   
+}
